@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(to right, #051622, #1a2735, #2f3a49, #444d5e, #5b6174);
+}
+
+#fileName {
+    color: #1BA098;
+}
+
+.responsive {
+    /* max-width: 75%; */
+    /* height: auto; */
+}
+
+
+/* img {
+    padding: 15px;
+} */
+
+.displayBox {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    height: 500px;
+    float: left;
+    padding: 1rem;
+}
