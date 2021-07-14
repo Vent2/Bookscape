@@ -13,7 +13,7 @@ function loadBook(filename, displayName) {
     xhr.open("GET", url, true);
     xhr.send();
 
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             currentBook = xhr.responseText;
 
@@ -93,7 +93,7 @@ function sortProperties(obj) {
     let rtnArray = Object.entries(obj);
 
     //Sort the array
-    rtnArray.sort(function (first, second) {
+    rtnArray.sort(function(first, second) {
         return second[1] - first[1];
     });
 
@@ -137,8 +137,6 @@ function performMark() {
     //find all the currently marked items
     let spans = document.querySelectorAll('mark');
 
-    //<mark>Harry</mark>
-    //Harry
 
     for (var i = 0; i < spans.length; i++) {
         spans[i].outerHTML = spans[i].innerHTML;
